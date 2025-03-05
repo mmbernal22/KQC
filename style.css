@@ -1,0 +1,251 @@
+/* DEBUG */
+/* * {
+    background-color: black !important;
+    color: black !important;
+    border: 2px solid red !important;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Murecho', sans-serif;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #E0E1DD;
+  background: #332E3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+header:hover {
+  transform: scale(1.05);
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1 h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2.5em;
+}
+
+.topImg {
+  margin-right: 20px;
+  padding: .25em;
+  border-radius: 50%;
+  border-color: #778DA9;
+  border-style: double;
+  border-width: 5px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  margin: 10px;
+  color: #778DA9;
+  text-decoration: none;
+  font-family: 'Oleo Script', cursive;
+  font-size: 1.5em;
+}
+
+li a:hover:not(.active) {
+  color: #CE5374;
+}
+
+li a:active {
+  color: #E98A15;
+}
+
+.active {
+  color: #E98A15;
+  pointer-events: none;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: .25em;
+  background-color: #E0E1DD;
+}
+
+.back a {
+  margin-right: 10px;
+  color: #CE5374;
+  text-decoration: none;
+  font-family: 'Oleo Script', cursive;
+  font-size: 1.5em;
+}
+
+.hero {
+	background-image: url("assets/cupcakes.jpg");
+  min-height: 90vh; 
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heroText h1, .heroText h3 {
+  filter: grayscale(0);
+  transition: .3s ease-in-out;
+}
+
+.heroText h1:hover, .heroText h3:hover {
+  filter: grayscale(100%);
+}
+
+.heroText h1 {
+	position: relative;
+  color: #E0E1DD;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-family: 'Oleo Script', cursive;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black, 0 0 25px #E98A15, 0 0 5px #E98A15;
+  z-index: 1;
+}
+
+.heroText h3 {
+	position: relative;
+  line-height: 1;
+  color: #E98A15;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px black, 0 0 25px #E98A15, 0 0 5px #E98A15;
+  z-index: 1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+	line-height: 50vh;
+	overflow: hidden;
+}
+
+#about {
+  margin: 2em;
+}
+
+#about h2 {
+  padding: 1em 0 .5em 0;
+  color: #CE5374;
+}
+
+#about h3 {
+  padding: .5em 0 0 0;
+  color: #E98A15;
+}
+
+#about p {
+  padding: .5em 0 0 0;
+}
+
+.profile {
+  margin: 1em 1em .5em 0;
+  padding: .5em;
+  float: left;
+  border-color: #778DA9;
+  border-style: double;
+  border-width: 5px;
+}
+
+#order {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #E0E1DD
+}
+
+#order h2 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2.25em;
+  color: #CE5374;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+#order h2:hover {
+  transform: scale(1.05);
+}
+
+.buttons {
+  border-style: none;
+  border-radius: 5px;
+  background-color: #E98A15;
+  padding: 2px 5px;
+  color: #332E3C;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.buttons:hover {
+  background-color: #CE5374;
+}
+
+.buttons:active {
+  background-color: #E0E1DD;
+}
+
+form {
+  line-height: 1.5;
+  font-size: 1.5em;
+}
+
+input, select {
+  text-align: center;
+  font-size: 1em;
+}
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 3.5em;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #E0E1DD;
+  background: #332E3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+
+  .div1 {
+    display: block;
+  }
+  
+  ul {
+    display: block;
+  }
+}
